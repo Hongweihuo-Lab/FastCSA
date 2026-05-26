@@ -6,7 +6,7 @@
 
 FastCSA is the first practical compression paradigm that compresses normalized sublists [2,3] rather than the conventional $\Sigma$-list representation [4,5]. It introduces HEF, a novel code that effectively captures run distribution in normalized sublists and sublist blocks. FastCSA also adopt diverse complementary encodings to capture block-scale run characteristics and heterogeneous patterns.
 
-For a text string T[1, t] of t symbols from an alphabet $\Sigma$ of size $\sigma$ and a pattern P[1, m] with P[i] in $\Sigma$, FastCSA supports following three fundamental queries:
+For a text string T[1, t] of t symbols from an alphabet $\Sigma$ of size $\sigma$ and a pattern P[1, m] with P[i] in $\Sigma$, FastCSA efficiently supports three fundamental queries:
 
 *   **Count:** the number occ of occurrences of P in T;
 *   **Locate:** the occ positions in T where P occurs; and
