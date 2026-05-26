@@ -12,19 +12,7 @@ For a text string T[1, t] of t symbols from an alphabet $\Sigma$ of size $\sigma
 *   **Locate:** the occ positions in T where P occurs; and
 *   **Extract:** the length-l substring T[start,start + l-1] that starts at text position start.
 
-## 1. Background
-
-A Suffix Array (SA) is a fundamental data structure used in string processing and information retrieval. However, standard suffix arrays require significant memory (typically 8 bytes per character for large texts that length >= 4GB), which becomes impractical for massive datasets.
-
-**fastcsa** implements a succinct data structure that compresses the suffix array (specifically using the $\Psi$ function and adaptive encoders) to reduce space usage significantly while supporting fast indexed operations. It allows users to perform the following core operations on compressed text:
-
-*   **Count:** Quickly determine the number of occurrences of a pattern.
-*   **Locate:** Find the exact positions of all occurrences of a pattern in the original text.
-*   **Extract:** Decompress and retrieve an arbitrary substring from the original text without storing the original file.
-
-The library leverages some modern C++20 features and AVX2/BMI2 instructions for optimal performance.
-
-## 2. Getting Started
+## 1. Getting Started
 
 ### Prerequisites
 
