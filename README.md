@@ -2,7 +2,7 @@
 
 # FastCSA
 
-**FastCSA** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA). It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint. 
+**FastCSA [1]** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA). It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint. 
 
 FastCSA is the first practical compression paradigm that compresses normalized sublists rather than the conventional $\Sigma$-list representation. It introduces HEF, a novel code that effectively captures run distribution in normalized sublists and sublist blocks. FastCSA also adopt diverse complementary encodings to capture block-scale run characteristics and heterogeneous patterns.
 
@@ -137,3 +137,11 @@ Use the `query` subcommand to load an index and run performance tests for Count,
 *   `oper`: Space-separated list of operations to benchmark (`count`, `locate`, `extract`).
 
 This command will print the **index load time** and the average time per operation (in microseconds or milliseconds).
+
+
+## References
+[1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter, FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. [https://doi.org/10.1109/icde65448.2025.00187](https://github.com/Hongweihuo-Lab/FastCSA)
+
+[2] oneTBB, https://github.com/oneapi-src/oneTBB
+
+[3] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
