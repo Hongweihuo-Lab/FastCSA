@@ -2,7 +2,7 @@
 
 # FastCSA
 
-**FastCSA [1]** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA). It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint. The library leverages some modern C++20 features and AVX2/BMI2 instructions for performance optimzation.
+**FastCSA [1]** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA) in high-order entropy space. It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint. The library leverages some modern C++20 features and AVX2/BMI2 instructions for performance optimzation.
 
 FastCSA is the first practical compression paradigm that compresses normalized sublists [2,3] rather than the conventional $\Sigma$-list representation [4,5]. It introduces HEF, a novel code that effectively captures run distribution in normalized sublists and sublist blocks. FastCSA also adopt diverse complementary encodings to capture block-scale run characteristics and heterogeneous patterns.
 
