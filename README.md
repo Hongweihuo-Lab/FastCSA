@@ -1,8 +1,8 @@
 
 
-# fastcsa
+# FastCSA
 
-**fastcsa** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA). It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint.
+**FastCSA** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA). It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint.
 
 ## 1. Background
 
