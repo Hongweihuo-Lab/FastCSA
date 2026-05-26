@@ -140,7 +140,7 @@ This command will print the **index load time** and the average time per operati
 
 
 ## References
-[1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter, FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. [https://doi.org/10.1109/icde65448.2025.00187](https://github.com/Hongweihuo-Lab/FastCSA)
+[1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter, FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. https://github.com/Hongweihuo-Lab/FastCSA
 
 [2] oneTBB, https://github.com/oneapi-src/oneTBB
 
