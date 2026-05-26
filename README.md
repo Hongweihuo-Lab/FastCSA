@@ -21,8 +21,7 @@ To build and use  `fastcsa`, you need the following:
 *   **C++ Compiler:** Must support **C++20** (e.g., GCC 10+, Clang 10+, MSVC 19.29+).
 *   **CMake:** Version 3.15 or higher.
 *   **Hardware:** A CPU with **AVX2** instruction set support.
-*   **Dependencies:**
-    *   **libdivsufsort64**: A fast suffix array construction library. This must be installed on your system (e.g., typically built from source or installed via a package manager like `libdivsufsort-dev` on Debian/Ubuntu, though ensure it includes the 64-bit version headers).
+*   **libsais [4]:** provides a linear-time construction of suffix array (SA). And it has been integrated into the ./_deps/ directory of the FastCSA repository.
 
 ### Building the Project
 
@@ -144,6 +143,4 @@ This command will print the **index load time** and the average time per operati
 
 [5] Hongwei Huo, Peng Long, and Jeffrey Scott Vitter. 2023. Practical High-order Entropy-compressed Text Self-indexing. IEEE Transactions on Knowledge and Data Engineering 35(3): 2943–2960. https://doi.org/10.1109/TKDE.2021.3114401
 
-[4] oneTBB, https://github.com/oneapi-src/oneTBB
-
-[3] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
+[4] Ilya Grebnov, libsais, https://github.com/IlyaGrebnov/libsais
