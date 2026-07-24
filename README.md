@@ -2,9 +2,9 @@
 
 # FastCSA
 
-**FastCSA [1]** is a high-performance C++ library that implements a fast Compressed Suffix Array (CSA) in high-order entropy space. It is designed to provide efficient full-text indexing and search capabilities while maintaining a compact memory footprint. The library leverages some modern C++20 features and AVX2/BMI2 instructions for performance optimzation.
-
-FastCSA is the first practical compression paradigm that compresses normalized sublists [2,3] rather than the conventional $\Sigma$-list representation [4,5]. It introduces HEF, a novel code that effectively captures run distribution in normalized sublists and sublist blocks. FastCSA also adopt diverse complementary encodings to capture block-scale run characteristics and heterogeneous patterns.
+**FastCSA [1]** is a high-performance C++ library that implements an optimized, algorithm-engineered version of OptCSA [2], a high-order entropy space framework for fast text self-indexing. 
+It is designed to maximize Compressed Suffix Array (CSA) [3,4,5] query speed and still achieve competitive space efficiency. 
+The library leverages some modern C++20 features and AVX2/BMI2 instructions for performance optimzation.
 
 For a text string T[1, t] of t symbols from an alphabet $\Sigma$ of size $\sigma$ and a pattern P[1, m] with P[i] in $\Sigma$, FastCSA efficiently supports three fundamental queries:
 
@@ -133,14 +133,15 @@ This command will print the **index load time** and the average time per operati
 
 
 ## References
-[1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter. FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. https://github.com/Hongweihuo-Lab/FastCSA
+[1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter. FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. submitted.
 
-[2] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2003. High-order Entropy-compressed Text Indexes. In Proceedings of the 14th ACM-SIAM Symposium on Discrete Algorithms (SODA’03), pages 841–850. https://dl.acm.org/doi/10.5555/644108.644250
+[2] Hongwei Huo and Jeffrey Scott Vitter. Fast Text Self-Index With High-Order Entropy Space Based Upon Sublist Increment Sequences.
+Submitted.
 
-[3] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2005. An Algorithmic Framework for Compression and Text Indexing. http://www.ittc.ku.edu/~jsv/Papers/GGV05.algorithmicframework.pdf, 38 pages.
+[3] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2003. High-order Entropy-compressed Text Indexes. In Proceedings of the 14th ACM-SIAM Symposium on Discrete Algorithms (SODA’03), pages 841–850. https://dl.acm.org/doi/10.5555/644108.644250
 
-[4] Roberto Grossi and Jeffrey Scott Vitter. 2005. Compressed Suffix Arrays and Suffix Trees with Applications to Text Indexing and String Matching. SIAM J. Comput. 35(2): 378–407. https://doi.org/10.1137/S0097539702402354
+[4] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2005. An Algorithmic Framework for Compression and Text Indexing. http://www.ittc.ku.edu/~jsv/Papers/GGV05.algorithmicframework.pdf, 38 pages.
 
-[5] Hongwei Huo, Peng Long, and Jeffrey Scott Vitter. 2023. Practical High-order Entropy-compressed Text Self-indexing. IEEE Transactions on Knowledge and Data Engineering 35(3): 2943–2960. https://doi.org/10.1109/TKDE.2021.3114401
+[5] Roberto Grossi and Jeffrey Scott Vitter. 2005. Compressed Suffix Arrays and Suffix Trees with Applications to Text Indexing and String Matching. SIAM J. Comput. 35(2): 378–407. https://doi.org/10.1137/S0097539702402354
 
 [6] Ilya Grebnov, libsais, https://github.com/IlyaGrebnov/libsais
