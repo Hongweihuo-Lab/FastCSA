@@ -2,7 +2,7 @@
 
 # FastCSA
 
-**FastCSA [1]** is a high-performance C++ library that implements an optimized, algorithm-engineered version of OptCSA [2], a high-order entropy space framework for fast text self-indexing. 
+**FastCSA [1]** is a high-performance C++ library. 
 It is designed to maximize Compressed Suffix Array (CSA) [3,4,5] query speed and still achieve competitive space efficiency. 
 The library leverages some modern C++20 features and AVX2/BMI2 instructions for performance optimzation.
 
@@ -134,11 +134,7 @@ This command will print the **index load time** and the average time per operati
 
 ## References
 [1] Hongwei Huo, Yongze Yu, and Jeffrey Scott Vitter. FastCSA: A Fast Compressed Suffix Array Using High-Order Entropy Space. submitted.
-
-[2] Hongwei Huo and Jeffrey Scott Vitter. Fast Text Self-Index With High-Order Entropy Space Based Upon Sublist Increment Sequences.
-Submitted.
-
-[3] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2003. High-order Entropy-compressed Text Indexes. In Proceedings of the 14th ACM-SIAM Symposium on Discrete Algorithms (SODA’03), pages 841–850. https://dl.acm.org/doi/10.5555/644108.644250
+[2] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2003. High-order Entropy-compressed Text Indexes. In Proceedings of the 14th ACM-SIAM Symposium on Discrete Algorithms (SODA’03), pages 841–850. https://dl.acm.org/doi/10.5555/644108.644250
 
 [4] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. 2005. An Algorithmic Framework for Compression and Text Indexing. http://www.ittc.ku.edu/~jsv/Papers/GGV05.algorithmicframework.pdf, 38 pages.
 
